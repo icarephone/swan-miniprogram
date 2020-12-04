@@ -43,7 +43,7 @@ func TokenURL(appKey, appSecret string) (s string, err error) {
 	query.Set("client_id", appKey)
 	query.Set("client_secret", appSecret)
 	query.Set("scope", "smartapp_snsapi_base")
-	query.Set("grant_type", "client_credential")
+	query.Set("grant_type", "client_credentials")
 
 	u.RawQuery = query.Encode()
 
